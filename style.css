@@ -128,3 +128,90 @@ ul li{
     margin:15px 0;
 
 }
+.counter{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    align-items: space-between;
+    gap: 20px;
+    padding: 90px 0;
+    border-top: 1px solid #321d47;
+}
+.counter-box{
+    text-align: center;
+     width: 240px;
+}
+.counter-box h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: #00FF88;
+    margin-bottom: 10px;
+}
+.counter-box p{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+
+}
+.grid-section{
+    background-color: #230E3D;
+    padding: 100px 0;
+}
+.grid-section h2, .card-heading{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+    
+}
+.grid-box{
+    background: #2a0f45;
+  padding: 30px;
+  border-radius: 18px;
+}
+.grid-box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.grid-box p{
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+.grid-box *{
+    margin-bottom: 17px;
+}
+
+.headphone{
+    grid-row: span 2;
+    align-content: center;
+}
+
+.device{
+    grid-column: span 2;
+}
+ .zap-fast{
+    grid-column: span 2;
+}
+   
+
+.location{
+    grid-column: span 2;
+}
+.Featured-episodes{
+    padding: 70px 0;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
