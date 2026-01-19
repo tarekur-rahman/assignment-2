@@ -12,6 +12,7 @@
     
 }
 .container{
+    width: 75%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -24,6 +25,7 @@
     border: none;
     text-align: center;
 }
+
 .nd-btn{
     color: #00FF88;
     padding: 12px 16px;
@@ -69,6 +71,9 @@ ul li{
 .nav-menu a:hover{
     color: rgb(196, 190, 190);
 }
+.humberger-icon{
+    display: none;
+}
 #hero-banner{
     background-image: url(./assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -87,6 +92,19 @@ ul li{
     z-index: 20;
     top: 25%;
     right: 35%;
+}
+.badg{
+    position: absolute;
+    top: 11%;
+    right: 1%;
+    /* left: 50%; */
+}
+.badg span{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: #00FF88;
+    border-radius: 20px;
+    padding: 8px 10px;
 }
 .banner-content h1{
     font-size: 60px;
@@ -177,7 +195,7 @@ ul li{
   padding: 30px;
   border-radius: 18px;
 }
-.grid-box h3{
+.grid-box h3, .third-heading{
     font-size: 24px;
     font-weight: 600;
     color: white;
@@ -214,4 +232,80 @@ ul li{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+.card{
+    background-color: #250D44;
+    border-radius: 15px;
+}
+.inner-card{
+    padding: 10px 20px;
+}
+.card *{
+    margin-bottom: 19px;
+}
+.card iframe{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.inner-card p{
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+
+}
+.card h5{
+    font-size: 15px;
+    color: #00FF88;
+}
+
+/* Mobile */
+@media screen and (max-width:640px){
+    .container{
+        width: 90%;
+    }
+    .humberger-icon{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    /* .circle-img{
+        width: 100%;
+    } */
+     .banner-content h1{
+        font-size: 45px;
+     }
+
+    .counter{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 20px;
+       row-gap: 50px;
+    }
+    .counter-box{
+        width: 100%;
+    }
+    .counter h2{
+        font-size: 40px;
+    }
+    .grid-layout{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-flex{
+        flex-wrap: wrap;
+    }
+   .primary-heading{
+    font-size: 25px;
+   }
+   #primary-heading{
+    font-size: 32px;
+   }
+   .grid-section{
+    padding: 60px 0px;
+   }
+
+
+
 }
