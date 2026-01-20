@@ -356,8 +356,37 @@ footer img{
     color: rgb(176, 173, 173);
 }
 
+@media screen and (max-width:992px){
+    .counter{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+     .humberger-icon{
+        display: block;}
+
+     .nav-menu{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }  
+       .footer-grid{
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    row-gap: 20px;
+    
+   } 
+   footer{
+    background-size: cover;
+    
+   }
+
+
+}
 /* Mobile */
-@media screen and (max-width:640px){
+@media screen and (max-width:576px){
     .container{
         width: 90%;
     }
@@ -433,6 +462,7 @@ footer img{
     grid-template-rows: repeat(2,1fr);
     gap: 10px;
     row-gap: 20px;
+    
    }
    
 
