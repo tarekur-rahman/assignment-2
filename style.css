@@ -24,6 +24,7 @@
     font-size: 16px;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 .nd-btn{
@@ -33,6 +34,7 @@
     border: 1px solid #00FF88;
     border-radius: 100px;
     background: transparent;
+    cursor: pointer;
 
 }
 .primary-btn:hover{
@@ -85,18 +87,38 @@ ul li{
     position: relative;
     display: inline-block;
     margin-top: 70px;
+
     
 }
+
+
 .microphone {
     position: absolute;
     z-index: 20;
     top: 25%;
     right: 35%;
+   
+}
+@keyframes glow {
+    0%{
+        box-shadow: #7b7b7b;
+        
+    }
+    50%{
+        box-shadow: 8px 2px 5px 3px rgb(255, 255, 255);
+        
+    }
+    100%{
+         box-shadow: #7b7b7b;
+       
+    }
 }
 .badg{
     position: absolute;
     top: 11%;
     right: 1%;
+    animation: glow 1.5s ease-in-out infinite;
+    
     /* left: 50%; */
 }
 .badg span{
@@ -117,7 +139,7 @@ ul li{
 }
 .banner-content p{
     font-size: 16px;
-    color: white;
+    color: rgb(219, 214, 214);
     font-weight: 400;
     margin:30px 0;
 }
@@ -141,7 +163,7 @@ ul li{
     max-width: 750px;
     font-size: 16px;
     line-height: 30px;
-    color: white;
+    color: rgb(219, 214, 214);
     font-weight: 400;
     margin:15px 0;
 
@@ -169,7 +191,7 @@ ul li{
     font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
-    color: white;
+    color: rgb(219, 214, 214);
 
 }
 .grid-section{
@@ -203,7 +225,7 @@ ul li{
 .grid-box p{
     font-size: 16px;
     line-height: 24px;
-    color: white;
+    color: rgb(219, 214, 214);
 }
 .grid-box *{
     margin-bottom: 17px;
@@ -250,7 +272,7 @@ ul li{
 .inner-card p{
     font-size: 16px;
     line-height: 24px;
-    color: white;
+    color: rgb(219, 214, 214);
 
 }
 .card h5{
@@ -287,7 +309,7 @@ ul li{
     font-size: 15px;
     line-height: 24px;
     font-weight: 100;
-    color: white;
+    color: rgb(219, 214, 214);
     margin-bottom: 20px;
 }
 .social-icon{
@@ -304,6 +326,34 @@ ul li{
     border: 1px solid #533C72;
     border-radius: 100%;
     text-align: center;
+}
+footer{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-position: center; */
+    background-color: #250E44;
+    text-align: center;
+    padding: 80px 0;
+}
+footer img{
+    width: 400px;
+    max-width: 100%;
+    padding-bottom: 60px;
+}
+.footer-grid{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 50px;
+    color: #FAFAFA;
+}
+.footer-p{
+    font-size: 14px;
+    color: rgb(176, 173, 173);
 }
 
 /* Mobile */
@@ -326,6 +376,16 @@ ul li{
      .banner-content h1{
         font-size: 45px;
      }
+     .circle-img{
+        width: 70%;
+        margin-top: 70px;
+     }
+        .circle-img img{
+            width: 100%;
+        }
+        .microphone{
+            width: 35%;
+        }
 
     .counter{
         grid-template-columns: repeat(2, 1fr);
@@ -334,6 +394,9 @@ ul li{
     }
     .counter-box{
         width: 100%;
+    }
+    .counter-box p{
+        font-size: 12px;
     }
     .counter h2{
         font-size: 40px;
@@ -356,6 +419,22 @@ ul li{
    #feedback{
     flex-wrap: wrap;
    }
+   footer{
+    background-size:cover;
+   
+    padding: 50px 0;
+   }
+   footer img{
+    width: 80%;
+   }
+   .footer-grid{
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    row-gap: 20px;
+   }
+   
 
 
 
